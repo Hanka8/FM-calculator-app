@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body class="all">
+
+  <main class="calculator">
+    <nav class="calculator__top">
+      <h1 class="h--1">calc</h1>
+
+      <div class="calculator__top__toggle">
+        <h2 class="h--2">theme</h2>
+        <div class="calculator__top__toggle__switches">
+          <div class="labels--container">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="switches--container">
+            <label for="1" aria-labelledby="color theme">
+              <input id="1" type="radio" name="color theme" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label for="2" aria-labelledby="color theme">
+              <input id="2" type="radio" name="color theme" checked="">
+              <span class="checkmark"></span>
+            </label>
+            <label for="3" aria-labelledby="color theme">
+              <input id="3" type="radio" name="color theme" checked="">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="display">
+      <p id="result" class="display__number">0</p>
+    </div>
+
+    <div class="numbers">
+      <button class="btn number key--number" type="button" name="button">7</button>
+      <button class="btn number key--number" type="button" name="button">8</button>
+      <button class="btn number key--number" type="button" name="button">9</button>
+      <button class="btn delete key--reset" type="button" name="button">del</button>
+      <button class="btn number key--number" type="button" name="button">4</button>
+      <button class="btn number key--number" type="button" name="button">5</button>
+      <button class="btn number key--number" type="button" name="button">6</button>
+      <button class="btn plus key--number" type="button" name="button">+</button>
+      <button class="btn number key--number" type="button" name="button">1</button>
+      <button class="btn number key--number" type="button" name="button">2</button>
+      <button class="btn number key--number" type="button" name="button">3</button>
+      <button class="btn minus key--number" type="button" name="button">-</button>
+      <button class="btn number dot key--number" type="button" name="button">.</button>
+      <button class="btn number key--number" type="button" name="button">0</button>
+      <button class="btn divide key--number" type="button" name="button">/</button>
+      <button class="btn multiply key--number" type="button" name="button">x</button>
+      <button class="btn reset key--reset" type="button" name="button">reset</button>
+      <button class="btn equals key--equals" type="button" name="button">=</button>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+  </script>
+</body>
+
+</html>
